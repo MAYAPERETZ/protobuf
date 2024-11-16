@@ -64,3 +64,4 @@ message User {
     google.type.LatLng last_known_location = 25;
 
 }
+
