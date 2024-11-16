@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package first.proto.pkg;
+
+option go_package = "my-protobuf/protogen/first";
+
+/*
+Job Application
+*/
+message Application {
+    uint32 application_id = 1;
+    string applicat_full_name = 2 [ json_name = "applicat_full_name"];
+    string phone = 3;
+    string email = 4; 
+}

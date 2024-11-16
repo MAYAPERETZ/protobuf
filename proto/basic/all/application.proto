@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+import "proto/basic/first/application.proto";
+import "proto/basic/second/application.proto";
+
+
+option go_package = "my-protobuf/protogen/all";
+
+message JobCandidate {
+    uint32 job_candidate_id = 1;
+    first.proto.pkg.Application application = 2;
+}
+
+message JobSoftware {
+    uint32 job_software_id = 1;
+    second.proto.pkg.Application application = 2;
+}
+
